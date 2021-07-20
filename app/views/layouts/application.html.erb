@@ -11,6 +11,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div style="display: flex;">
+    <%= render 'shared/sidebar' %>
+    <main><%= yield %></main>
+
+    <%= render 'shared/footer' %>
   </body>
 </html>
